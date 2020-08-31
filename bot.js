@@ -26,8 +26,8 @@ const prefix = "4";
 
 client.on('ready',async () => {
 console.log("Starting..");
-let g = client.guilds.get("675305746178637824"); // id server
-let c = g.channels.get("681955501696745543");// id channel
+let g = client.guilds.get("745941564609527829"); // id server
+let c = g.channels.get("745941564609527833");// id channel
 if(c.type === 'voice') {
 c.join();
 setInterval(() => {
