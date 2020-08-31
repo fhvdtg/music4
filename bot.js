@@ -1,5 +1,5 @@
 const Discord = require("discord.js");
-const prefix = "1";
+const { prefix, token } = require("./config.json");
 const ytdl = require("ytdl-core");
 
 const client = new Discord.Client();
@@ -126,4 +126,4 @@ function play(guild, song) {
   serverQueue.textChannel.send(`Start playing: **${song.title}**`);
 }
 
-client.login(process.env.BOT_TOKEN);
+client.login(token);
